@@ -19,6 +19,7 @@ function callApi() {
             stream.preview = data.streams[i].preview.small;
             stream.followers = data.streams[i].channel.followers;
             stream.viewers = data.streams[i].viewers;
+            stream.url=data.streams[i].channel.url;
             streamArray.push(stream);
         }
 
@@ -53,7 +54,8 @@ function showStreams(streamArray, totalStreams) {
         var list = document.createElement('div');
         document.getElementById("list").innerHTML += '<div class="streamContent"><img src=" '
                                                       +streamArray[i].preview + '"><div id="streamDetails"><h4>Name: &nbsp;</h4>'
-                                                      + streamArray[i].displayName +'</br><h4>Game: &nbsp;</h4>' + streamArray[i].game + ' - <h4>'
+                                                      + streamArray[i].displayName +'</br><h4>Profile: &nbsp;</h4><a href ="'
+                                                      +streamArray[i].url+'" target="_blank">'+streamArray[i].url+'</a></br><h4>Game: &nbsp;</h4>' + streamArray[i].game + ' - <h4>'
                                                       + streamArray[i].views +'</h4> viewers. </br>This stream has '
                                                       + streamArray[i].followers +' followers and '+ streamArray[i].viewers +' viewers.</div></div>';
     }
