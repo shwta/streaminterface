@@ -143,3 +143,6 @@ button:disabled{
   width: 45px;
   text-align:center;
 }
+#streamDetails{
+  margin-left:100px;
+}
