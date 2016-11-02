@@ -2,7 +2,7 @@ html,body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: rgba(180, 183, 183, 0.97);
+    background-color: rgba(159, 189, 189, 0.97);
 }
 #map {
   height: 100%;
@@ -42,10 +42,11 @@ h4 {
     border-radius: 25px;
     box-shadow: 0px 5px 0px rgba(109, 123, 123, 0.97);
     border: 1px solid black;
-    background: rgba(214, 61, 61, 0.33);
+    background: rgba(72, 20, 17, 0.7);
     outline: none;
     transition: all ease 0.3s;
     margin-top: 15px;
+    color: #c5e5f3;
 }
 #searchButton:active {
     box-shadow: 0 3px 0 gray;
