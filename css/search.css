@@ -2,7 +2,7 @@ html,body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #d6c4c7;
+    background-color: rgba(180, 183, 183, 0.97);
 }
 #map {
   height: 100%;
@@ -40,9 +40,9 @@ h4 {
     height: 35px;
     color: black;
     border-radius: 25px;
-    box-shadow: 0px 5px 0px #888888;
+    box-shadow: 0px 5px 0px rgba(109, 123, 123, 0.97);
     border: 1px solid black;
-    background: rgb(61, 211, 214);
+    background: rgba(214, 61, 61, 0.33);
     outline: none;
     transition: all ease 0.3s;
     margin-top: 15px;
